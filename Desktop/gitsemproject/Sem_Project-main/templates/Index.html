@@ -16,26 +16,27 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.search label .fa{
+  position: absolute;
+  left: 15px;
+  top: 4px;
+}
+</style>
 </head>
 <body>
-    <section class="header" >
-        <nav >
+    <section class="header">
+        <nav>
             <a href="index.html"><img src="/static/images/LOGOO.jpg"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()" ></i>
-                <ul style="margin-top:-40px;">
+                <ul>
                     <li><a href="{% url 'index' %}" >HOME</a></li>
                     <li><a href="{% url 'about' %}" >ABOUT</a></li>
                     <li><a href="{% url 'faq' %}" >FAQ</a></li>
                     <li><a href="{% url 'contact' %}" >CONTACT US</a></li>
-                    <li><form class="form" action="{% url 'search' %}" method="get">
-                 <div class="search">
-                        <label>
-                            <input style="border-radius: 2cm; height: 30px; text-align: center; padding-top: 4px;" type="text" placeholder="Search here..." name="Query" id ='Query'>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </label>
-                    </div>
-            </form>
+                    <li><a href="{% url 'search' %}" >Browse</a></li>
                     <li><a href="{% url 'reg'%}"><button type="submit" class="hero-btn red-btn">Sign In</button></a></li>
                     <li><a href="{% url 'user_login' %}"><button type="submit" class="hero-btn red-btn">Login</button></a></li>
                 </ul>
@@ -51,15 +52,14 @@
                 <br>
                 The right name is an advertisement in itself.
             </p>
-            <a href="/company" class="hero-btn">Be the Brand Ambassador</a>
-            <a href="{% url 'reg'%}" class="hero-btn">Find your Brand Ambassador here</a>
+            <a href="/company" class="hero-btn">Find your Brand Ambassador here</a>
+            <a href="{% url 'reg'%}" class="hero-btn">Be the Brand Ambassador</a>
         </div>
         <!--
         <div class="wavey">
             <div class="wave"></div>
         </div>
-        
-     -->
+        -->
         <div class="clouds">
             <img src="/static/images/cloud1.png" style="--i:1">
             <img src="/static/images/cloud2.png" style="--i:2">

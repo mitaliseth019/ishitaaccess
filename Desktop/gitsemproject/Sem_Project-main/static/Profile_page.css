@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -15,7 +14,6 @@ DARK TEAL GREEN #005245
 */
 body{
   overflow-x: hidden;
-  background-color: #000;
 }
 .container{
   position: relative;
@@ -87,9 +85,6 @@ body{
   min-height: 100vh;
   background: #f5f5f5;
   transition: 0.5s;
-  background-color: #cf8f9cd7;
-  opacity: 0.8;
-
 }
 .main.active{
   width: calc(100% - 300px);
@@ -148,8 +143,8 @@ body{
 .user{
   position: relative;
   min-width: 50px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -169,7 +164,6 @@ body{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 20px;
-  height: 120%;
 }
 .cardBox .card{
   position: relative;
@@ -199,20 +193,17 @@ body{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
-  
 }
 .details .recentProjects{
   position: relative;
   display: grid;
-  bottom:20px ;
-  min-height: 750px;
+  min-height: 850px;
   background-image: url(/static/images/palettee.jpg);
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-position: right;
   background-size: cover;
   padding: 20px;
-  
 }
 .cardHeader{
   display: flex;
@@ -237,7 +228,6 @@ body{
 .details table{
   width: 100%;
   border-collapse: collapse;
-  margin-top: -200px;
 }
 .details table thead{
   background: #ffffff67;
@@ -289,7 +279,7 @@ body{
 .details .promoReq{
   position: relative;
   display: grid;
-  min-height: 430px;
+  min-height: 530px;
   background: url(/static/images/palettee.jpg);
   padding: 20px;
 }
